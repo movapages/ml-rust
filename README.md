@@ -3,7 +3,7 @@
 
 #### 1. Data Wrangling
 
-- [x] [Read CSV File(s)](csv2struc/README.md)
+- [x] [Read CSV File(s)](csv2struc)
 - [ ] Data Cleaning
 - [ ] Handling Missing Values
 - [ ] Removing Outliers
