@@ -1,0 +1,8 @@
+[package]
+name = "dataval"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+hap_dataset = {path = "../hap_dataset"}
+csv = "1.3.0"
