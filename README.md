@@ -4,13 +4,14 @@
 #### 1. Data Wrangling
 
 - [x] [Read CSV File(s)](csv2struc)
-- [ ] Data Cleaning
+###### 1.1. Data Cleaning
+- [x] [Counting Missing Values](csv_count_missing)
 - [ ] Handling Missing Values
 - [ ] Removing Outliers
 - [ ] Normalizing and Scaling
 - [ ] Data Transformation
 
-###### 1.1. Feature Engineering
+###### 1.2. Feature Engineering
 
 - [ ] Creating Polynomial Features
 - [ ] Creating Interaction Terms
@@ -18,6 +19,6 @@
 - [ ] Binning and Discretization
 - [ ] Normalization and Standardization
 
-###### 1.2. Plotters and Data Visualization
+###### 1.3. Plotters and Data Visualization
 
 TBC
