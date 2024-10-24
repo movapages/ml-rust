@@ -1,5 +1,5 @@
 ### ML Rust Snippets
-> > >ML snippets in Rust to master basic ML engineering.
+> ML snippets in Rust to master basic ML engineering.
 
 #### 1. Data Wrangling
 
@@ -7,7 +7,7 @@
 ###### 1.1. Data Cleaning
 - [x] [Counting Missing Values](csv_missing_custom_delimiter)
 - [x] [Finding Outliers](csv_polars_find_outliers)
-- [ ] Normalizing and Scaling
+- [x] [Normalizing and Scaling](csv_polars_normalize)
 - [ ] Data Transformation
 
 ###### 1.2. Feature Engineering
