@@ -1,47 +1,6 @@
 use polars::prelude::*;
 use std::fs::File;
 
-// fn min_max_normalization(series: &Series) -> PolarsResult<Series> {
-//   let min = series.min().unwrap();
-//   let max = series.max().unwrap();
-//   Ok((series - min) / (max - min))
-// }
-
-// fn min_max_normalization(series: &Series) -> PolarsResult<Series> {
-//   // Get the min and max values, handling Result<Option<f64>, PolarsError>
-//   let min: Option<f64> = series.min()?;
-//   let max: Option<f64> = series.max()?;
-//
-//   // Debug: Print min and max
-//   println!("MIN: {:?}", min);
-//   println!("MAX: {:?}", max);
-//
-//   // If min or max is None, return an error
-//   if min.is_none() || max.is_none() {
-//     return Err(PolarsError::ComputeError("Cannot normalize series with no min or max".into()));
-//   }
-//
-//   let min = min.unwrap();
-//   let max = max.unwrap();
-//
-//   // Debug: Print a message if max and min are the same
-//   if min == max {
-//     println!("All values are the same. Setting normalized values to 1.0.");
-//     let length = series.len();
-//     let ones_series = Series::new(series.name().clone(), vec![1.0; length]);
-//     return Ok(ones_series);
-//   }
-//
-//   // Standard Min-Max Normalization
-//   println!("Performing standard Min-Max normalization.");
-//   let normalized_series = (series - min) / (max - min);
-//
-//   // Debug: Print the first few values of the normalized series
-//   // println!("First few normalized values: {:?}", normalized_series.head(Some(5)));
-//
-//   Ok(normalized_series)
-// }
-
 fn min_max_normalization(series: &Series) -> PolarsResult<Series> {
   // Cast the series to float type to ensure correct arithmetic
   let series = series.cast(&DataType::Float64)?;
