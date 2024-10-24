@@ -6,8 +6,7 @@
 - [x] [Read CSV File(s)](csv2struc)
 ###### 1.1. Data Cleaning
 - [x] [Counting Missing Values](csv_missing_custom_delimiter)
-- [ ] Handling Missing Values
-- [ ] Removing Outliers
+- [x] Removing Outliers
 - [ ] Normalizing and Scaling
 - [ ] Data Transformation
 
