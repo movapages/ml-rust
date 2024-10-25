@@ -8,11 +8,10 @@
 - [x] [Counting Missing Values](csv_missing_custom_delimiter)
 - [x] [Finding Outliers](csv_polars_find_outliers)
 - [x] [Normalizing and Scaling](csv_polars_normalize)
-- [ ] Data Transformation
 
 ###### 1.2. Feature Engineering
 
-- [ ] Creating Polynomial Features
+- [x] [Creating Polynomial Features](csv_polars_polynomial)
 - [ ] Creating Interaction Terms
 - [ ] Categorical Variable Encoding
 - [ ] Binning and Discretization
