@@ -13,7 +13,7 @@
 
 - [x] [Creating Polynomial Features](csv_polars_polynomial)
 - [x] [Creating Interaction Terms](csv_polars_interaction)
-- [ ] Categorical Variable Encoding
+- [x] [Categorical Variable Encoding](csv_polars_categorical)
 - [ ] Binning and Discretization
 - [ ] Normalization and Standardization
 

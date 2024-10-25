@@ -1,4 +1,5 @@
 use polars::prelude::*;
+use polars_core::datatypes::Schema;
 use std::fs::File;
 
 fn main() {
@@ -25,7 +26,7 @@ fn main() {
 
   // println!("DF: {:#?}", df);
 
-  // 3. Put down the results
+  // 4. Put down the results
   let file_out = "/Volumes/dHDD/Rsys/ml-rust/src_files/hap_heart_attack_interaction.csv";
 
   let mut file = File::create(file_out).unwrap();
