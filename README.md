@@ -12,7 +12,7 @@
 ###### 1.2. Feature Engineering
 
 - [x] [Creating Polynomial Features](csv_polars_polynomial)
-- [ ] Creating Interaction Terms
+- [x] [Creating Interaction Terms](csv_polars_interaction)
 - [ ] Categorical Variable Encoding
 - [ ] Binning and Discretization
 - [ ] Normalization and Standardization

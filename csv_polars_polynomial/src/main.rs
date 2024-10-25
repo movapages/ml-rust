@@ -31,5 +31,5 @@ fn main() {
   let _ = CsvWriter::new(&mut file)
     .finish(&mut df).expect("CSV file write panic message");
 
-  println!("Normalized data in {}", file_out);
+  println!("CSV data with polynomial feature is in {}", file_out);
 }
