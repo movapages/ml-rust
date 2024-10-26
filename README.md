@@ -4,6 +4,7 @@
 #### 1. Data Wrangling
 
 - [x] [Read CSV File(s)](csv2struc)
+
 ###### 1.1. Data Cleaning
 - [x] [Counting Missing Values](csv_missing_custom_delimiter)
 - [x] [Finding Outliers](csv_polars_find_outliers)
@@ -14,9 +15,11 @@
 - [x] [Creating Polynomial Features](csv_polars_polynomial)
 - [x] [Creating Interaction Terms](csv_polars_interaction)
 - [x] [Categorical Variable Encoding](csv_polars_categorical)
-- [ ] Binning and Discretization
-- [ ] Normalization and Standardization
 
-###### 1.3. Plotters and Data Visualization
+###### 1.3. Plotting and Data Visualization
 
-TBC
+- [x] [CSV file basic (scatter) plotting](csv_plotters)
+
+###### 1.4. Data Export
+
+- [ ] Native binary format
