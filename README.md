@@ -23,4 +23,3 @@
 ###### 1.4. Data Export
 
 - [x] [Native binary format](csv_convert_ipc)
-- [ ] Data Serialization
