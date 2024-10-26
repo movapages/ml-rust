@@ -1,5 +1,5 @@
 ### ML Rust Snippets
-> ML snippets in Rust to master basic ML engineering.
+> ML engineering snippets in Rust to master basic ML engineering.
 
 #### 1. Data Wrangling
 
