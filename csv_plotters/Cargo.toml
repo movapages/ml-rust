@@ -4,6 +4,8 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-polars = { version = "0.43.1", features = ["csv"] }
-plotters = "0.3.1"
-plotters-canvas = "0.3.0"
+polars = { version = "0.44.1", features = ["csv"] }
+plotters = "0.3.7"
+
+[dependencies.plotters-canvas]
+version = "0.3.0"
