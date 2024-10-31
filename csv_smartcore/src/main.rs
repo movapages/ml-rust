@@ -1,6 +1,4 @@
 use csv::ReaderBuilder;
-use ndarray::Array2;
-// use smartcore::linalg::basic::dense_matrix::DenseMatrix;
 use smartcore::linalg::basic::matrix::DenseMatrix;
 use smartcore::linear::linear_regression::LinearRegression;
 use smartcore::model_selection::train_test_split;
@@ -33,13 +31,6 @@ fn main() {
     labels.push(risk);
   }
 
-  // Convert records to ndarray
-  let n_rows = &records.len();
-  let n_cols = &records[0].len();
-  // let flat_data: Vec<f64> = records.into_iter().flatten().collect();
-  // let features = Array2::from_shape_vec((n_rows, n_cols), flat_data)
-  //     .expect("Failed to create ndarray from CSV data");
-
   // Convert records directly to DenseMatrix
   let features = DenseMatrix::from_2d_vec(&records);
 
@@ -55,32 +46,5 @@ fn main() {
   let y_pred = lin_reg.predict(&x_test).expect("Failed to predict test data");
   let mse = mean_squared_error(&y_test, &y_pred);
   println!("Model Mean Squared Error: {:.2}", mse);
-  
-  // let features = DenseMatrix::from_2d_array(
-  //   &features.outer_iter().map(|row| row.as_slice().unwrap()).collect::<Vec<_>>()
-  // );
 
-  // let features = Array2::from_shape_vec((n_rows, n_cols), flat_data)
-      // .expect("Failed to create ndarray from CSV data");
-
-  // Split data into training and test sets
-  // let (x_train, x_test, y_train, y_test) = train_test_split(&features, &labels, 0.3, true, None);
-  // 
-  // // Convert ndarray to DenseMatrix for smartcore
-  // // **Convert ndarray to DenseMatrix using from_2d_array**
-  // let x_train = DenseMatrix::from_2d_array(
-  //   &x_train.outer_iter().map(|row| row.as_slice().unwrap()).collect::<Vec<_>>()
-  // );
-  // let x_test = DenseMatrix::from_2d_array(
-  //   &x_test.outer_iter().map(|row| row.as_slice().unwrap()).collect::<Vec<_>>()
-  // );
-  // 
-  // // Train a linear regression model
-  // let lin_reg = LinearRegression::fit(&x_train, &y_train, Default::default())
-  //     .expect("Failed to train linear regression model");
-  // 
-  // // Make predictions and calculate mean squared error
-  // let y_pred = lin_reg.predict(&x_test).expect("Failed to predict test data");
-  // let mse = mean_squared_error(&y_test, &y_pred);
-  // println!("Model Mean Squared Error: {:.2}", mse);
 }

@@ -23,3 +23,7 @@
 ###### 1.4. Data Export
 
 - [x] [Native binary format](csv_convert_ipc)
+
+#### 2. Supervised ML
+
+- [x] [Linear Regresssion Model](csv_smartcore)
